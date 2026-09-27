@@ -1,0 +1,108 @@
+/* Screenshot-inspired product previews */
+.reference-frame { height: auto; min-height: 660px; border-color: #e8e2f2; border-radius: 15px; background: #fff; box-shadow: 0 28px 70px rgba(35, 18, 70, .14); }
+.reference-app { min-height: 660px; display: grid; grid-template-columns: 260px 1fr; color: #201d29; background: #fff; font-family: var(--font-body); }
+.reference-sidebar { position: relative; display: flex; flex-direction: column; gap: 22px; padding: 24px 17px 0; background: #f7f5fd; border-right: 1px solid #ebe6f4; }
+.reference-brand { display: flex; align-items: center; gap: 11px; margin: 0 10px 9px; color: #7540ed; font: 700 24px var(--font-display); letter-spacing: .12em; }
+.reference-brand span, .reference-model > span:first-child { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; color: white; background: linear-gradient(135deg,#7138ed,#9b59fb); }
+.reference-new { height: 52px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 13px; color: white; background: linear-gradient(110deg,#7138ed,#873cf2); box-shadow: 0 8px 20px #773ceb35; font-size: 15px; font-weight: 700; }
+.reference-sidebar > small { margin: 1px 9px -11px; color: #888392; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.reference-nav { display: grid; gap: 3px; }
+.reference-nav button { min-height: 43px; display: flex; align-items: center; gap: 12px; padding: 0 10px; border: 0; border-radius: 9px; color: #777384; background: transparent; text-align: left; }
+.reference-nav button > span { width: 22px; text-align: center; font-size: 19px; }
+.reference-nav button.selected { color: #7138ed; background: #eee8ff; font-weight: 700; }
+.reference-nav em { margin-left: auto; padding: 3px 7px; border-radius: 5px; color: #7439e7; background: #e9ddff; font-size: 9px; font-style: normal; }
+.reference-bottom { display: flex; justify-content: space-around; gap: 5px; margin: auto -17px 0; padding: 14px 7px; border-top: 1px solid #ebe6f4; }
+.reference-bottom button { border: 0; color: #777384; background: transparent; font-size: 19px; }
+.reference-main { min-width: 0; }
+.reference-main > header { height: 68px; display: flex; justify-content: flex-end; align-items: center; padding: 0 28px; border-bottom: 1px solid #eeeaf5; }
+.reference-main > header > span { margin-right: auto; color: #a09baa; font-size: 11px; }
+.reference-main > header button, .reference-main > header a { padding: 11px 25px; border: 0; border-radius: 13px; color: white; background: #793bef; font-weight: 700; }
+.reference-content { max-width: 860px; margin: 48px auto 0; padding: 0 30px 25px; text-align: center; }
+.reference-greeting { margin: 0 0 10px; color: #9776df; font-size: 10px; font-weight: 700; letter-spacing: .14em; }
+.reference-content h2 { max-width: 720px; margin: 0 auto 12px; font: 700 clamp(26px,3.1vw,39px)/1.15 var(--font-display); letter-spacing: -.04em; }
+.reference-subtitle { color: #858091; font-size: 15px; }
+.reference-suggestions { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 36px; text-align: left; }
+.reference-suggestions button { min-height: 107px; padding: 18px; border: 1px solid #e9e3f3; border-radius: 15px; background: white; box-shadow: 0 2px 4px #3120470d; text-align: left; }
+.reference-suggestions b { display: block; margin-bottom: 8px; color: #282431; font-size: 14px; text-transform: capitalize; }
+.reference-suggestions span { color: #858091; font-size: 12px; line-height: 1.55; }
+.reference-response { margin: 30px auto; padding: 18px; border: 1px solid #e9e3f3; border-radius: 15px; text-align: left; }
+.reference-response > b { color: #787281; font-size: 12px; }.reference-response > p { margin: 7px 0 18px; }
+.reference-answer { display: flex; gap: 12px; padding-top: 14px; border-top: 1px solid #eeeaf5; }.reference-answer > span { color: #793bef; }.reference-answer p { margin: 5px 0 0; color: #777384; font-size: 13px; }
+.reference-composer { margin-top: 34px; padding: 12px 14px 9px; border: 1px solid #e6def3; border-radius: 17px; background: white; box-shadow: 0 8px 28px #3622520b; text-align: left; }
+.reference-model { display: flex; align-items: center; gap: 8px; padding-bottom: 10px; color: #454150; }
+.reference-model > span:first-child { width: 27px; height: 27px; border-radius: 50%; font-size: 15px; }
+.reference-model select, .extension-input select { border: 0; color: #332e3c; background: transparent; font-weight: 600; }
+.reference-tools { margin-left: auto; color: #888392; }
+.reference-input { display: flex; gap: 10px; padding: 7px; border: 1px solid #eee9f5; border-radius: 12px; }
+.reference-input input { flex: 1; min-width: 0; padding: 0 8px; border: 0; outline: 0; color: #292532; background: transparent; font: inherit; }
+.reference-input button { width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; color: white; background: #793bef; }
+.reference-composer > small { display: block; margin-top: 8px; color: #a09baa; text-align: center; font-size: 10px; }
+.extension-reference { min-height: 660px; overflow: hidden; color: #20202a; background: #f0eff4; font-family: Arial,sans-serif; }
+.extension-title { height: 42px; display: flex; align-items: center; gap: 9px; padding: 0 13px; color: #c3c2ca; background: #3c3d49; font-size: 13px; font-weight: 600; }
+.extension-title > span { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; color: white; background: #793bef; }
+.extension-title b { margin-left: auto; font-size: 17px; }
+.extension-body { min-height: 618px; display: grid; grid-template-columns: 1fr 72px; margin: 0 10px; border-radius: 11px; overflow: hidden; background: white; }
+.extension-body main { position: relative; min-width: 0; }
+.extension-body main > header { height: 67px; display: flex; align-items: center; gap: 22px; padding: 0 21px; border-bottom: 1px solid #eeeef2; }
+.extension-body main > header h3 { margin: 0 auto 0 0; font-size: 23px; font-weight: 500; }
+.extension-body main > header button { padding: 12px 19px; border: 0; border-radius: 14px; color: white; background: #5d5df7; font-weight: 700; }
+.extension-body main > header > span { color: #9293a0; font-size: 21px; }
+.extension-content { padding: 15px 20px; }
+.extension-content > small { color: #90909c; font-size: 13px; }
+.extension-content h2 { margin: 7px 0 17px; font-size: 27px; }
+.extension-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.extension-actions button { min-height: 55px; display: flex; align-items: center; gap: 12px; padding: 9px 12px; border: 1px solid #e8e7ef; border-radius: 17px; background: #fcfbfe; font-weight: 700; text-align: left; }
+.extension-actions i { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; color: #7845f4; background: #eee8ff; font-size: 19px; font-style: normal; }
+.extension-actions button:nth-child(2) i { color: #4285ff; background: #e5f0ff; }.extension-actions button:nth-child(3) i { color: #19ae67; background: #e5f8ee; }.extension-actions button:nth-child(4) i { color: #e24f9a; background: #fde8f3; }
+.extension-prompts { display: grid; gap: 6px; margin-top: 12px; }
+.extension-prompts button { min-height: 37px; padding: 7px 13px; border: 0; border-radius: 12px; background: #f3f2f6; text-align: left; }
+.extension-reply { padding: 11px; border-radius: 12px; background: #f3f2f6; }.extension-reply p { margin: 5px 0; }.extension-reply small { color: #8a8995; }
+.extension-input { position: absolute; right: 14px; bottom: 10px; left: 14px; min-height: 130px; padding: 10px 12px; border: 1px solid #e8e6ef; border-radius: 17px; background: #fff; }
+.extension-input > div { display: flex; justify-content: space-between; color: #9493a1; font-size: 13px; }
+.extension-input textarea { width: calc(100% - 42px); height: 52px; resize: none; padding: 11px 5px; border: 0; outline: 0; font: inherit; }
+.extension-input > button { position: absolute; right: 11px; bottom: 23px; width: 40px; height: 40px; border: 0; border-radius: 50%; color: white; background: #5d5df7; font-size: 20px; }
+.extension-input > small { display: block; color: #9795a2; text-align: center; font-size: 10px; }
+.extension-body nav { display: flex; flex-direction: column; align-items: stretch; gap: 3px; padding: 10px 5px; background: #f4f3f8; }
+.extension-body nav button { min-height: 51px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border: 0; border-radius: 10px; color: #858493; background: transparent; font-size: 11px; }
+.extension-body nav button span { font-size: 20px; }.extension-body nav button.selected { color: #5d5df7; background: #e9e9ff; }
+.extension-body nav button.extension-settings { margin-top: auto; }
+.extension-body nav button small { font-size: 9px; }
+.extension-body main > header .extension-history-shortcut { padding: 7px; color: #898995; background: transparent; font-size: 21px; }
+.extension-page { padding: 25px 22px 160px; }
+.extension-page h2 { margin: 0 0 6px; font-size: 21px; }
+.extension-page > p { margin: 0 0 20px; color: #888793; font-size: 13px; }
+.extension-page > label { display: flex; flex-direction: column; gap: 8px; margin: 13px 0; padding: 13px; border: 1px solid #ebe9f1; border-radius: 12px; color: #383743; font-size: 12px; font-weight: 700; }
+.extension-page > label select { padding: 10px; border: 1px solid #e7e5ed; border-radius: 8px; background: white; }
+.extension-page > label.extension-toggle { flex-direction: row; align-items: center; justify-content: space-between; }
+.extension-toggle span { display: grid; gap: 4px; }.extension-toggle small { color: #898793; font-size: 11px; font-weight: 400; }
+.extension-save { padding: 10px 18px; border: 0; border-radius: 9px; color: white; background: #5d5df7; font-weight: 700; }
+.extension-history-item { width: 100%; display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 8px; padding: 13px 10px; border: 0; border-bottom: 1px solid #eeedf2; color: #3c3b46; background: white; text-align: left; }
+.extension-history-item > span { color: #858492; }.extension-history-item > b { overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }.extension-history-item > small { color: #92919e; font-size: 10px; }
+.extension-quick-label { display: block; margin: 4px 0 0; color: #9694a0; font-size: 9px; font-weight: 700; letter-spacing: .09em; }
+.extension-quick-actions { display: flex; flex-wrap: wrap; gap: 6px; }.extension-quick-actions button { min-height: auto; padding: 7px 9px; border: 1px solid #e9e5f3; border-radius: 9px; color: #7042cb; background: #f7f3ff; font-size: 10px; }
+.extension-upgrade { min-height: 51px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border-radius: 10px; color: #858493; font-size: 11px; }.extension-upgrade > span { font-size: 20px; }
+.reference-frame .reference-workspace { position: relative; width: 100%; height: 672px; min-height: 672px; overflow: hidden; border-radius: inherit; }
+.reference-frame .reference-workspace .workspace-sidebar { position: absolute; inset: 0 auto 0 0; width: 235px; padding: 16px 12px 10px; }
+.reference-frame .reference-workspace .workspace-main { width: calc(100% - 235px); height: 100%; min-height: 0; margin-left: 235px; }
+.reference-frame .reference-workspace .workspace-header { height: 56px; flex-basis: 56px; padding-inline: 16px; }
+.reference-frame .reference-workspace .chat-empty { width: min(650px, calc(100% - 36px)); margin: 36px auto 18px; }
+.reference-frame .reference-workspace .chat-empty h1 { font-size: clamp(25px, 3vw, 36px); }
+.reference-frame .reference-workspace .empty-copy { margin: 12px 0 18px; font-size: 11px; }
+.reference-frame .reference-workspace .empty-icon { width: 34px; height: 34px; margin-bottom: 14px; }
+.reference-frame .reference-workspace .starter-grid { gap: 7px; }
+.reference-frame .reference-workspace .starter-grid button { min-height: 46px; padding: 8px; }
+.reference-frame .reference-workspace .starter-grid i { width: 25px; height: 25px; }
+.reference-frame .reference-workspace .starter-grid span { font-size: 10px; }
+.reference-frame .reference-workspace .demo-note { margin-top: 12px; font-size: 9px; }
+.reference-frame .reference-workspace .composer-dock { padding: 8px 10px; }
+.reference-frame .reference-workspace .chat-composer { padding: 8px 10px 7px; }
+.reference-frame .reference-workspace .chat-composer textarea { min-height: 38px; max-height: 70px; padding: 6px 2px; font-size: 11px; }
+.reference-frame .reference-workspace .composer-bottom button { width: 27px; height: 27px; }
+.reference-frame .reference-workspace .composer-disclaimer { margin-top: 4px; font-size: 8px; }
+@media (max-width: 640px) {
+  .reference-frame .reference-workspace .workspace-sidebar { display: none; transform: none; }
+  .reference-frame .reference-workspace .workspace-main { width: 100%; margin-left: 0; }
+  .reference-frame .reference-workspace .chat-empty { width: calc(100% - 22px); margin-top: 24px; }
+  .reference-frame .reference-workspace .chat-empty h1 { font-size: 26px; }
+  .reference-frame .reference-workspace .starter-grid { grid-template-columns: 1fr 1fr; }
+}

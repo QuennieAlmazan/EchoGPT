@@ -1,0 +1,39 @@
+:root {
+  --bg: #0b0912;
+  --bg-soft: #110d1b;
+  --surface: rgba(25, 19, 40, 0.82);
+  --surface-solid: #171126;
+  --surface-high: #211936;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-bright: rgba(255, 255, 255, 0.16);
+  --text: #f7f8fc;
+  --muted: #979eb2;
+  --muted-dark: #687086;
+  --blue: #8a4cf6;
+  --blue-light: #c6a6ff;
+  --violet: #b79aff;
+  --cyan: #8b7cff;
+  --mint: #a88bff;
+  --peach: #d0b4ff;
+  --success: #8bd9a7;
+  --font-display: "Manrope", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--font-body);
+  font-synthesis: none;
+}
+
+html { scroll-behavior: smooth; background: var(--bg); }
+body { margin: 0; min-width: 320px; background: var(--bg); overflow-x: hidden; }
+body { font-family: var(--font-body); font-optical-sizing: auto; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h1, h2, h3, h4, button, input, textarea, select { font-family: var(--font-display); }
+* { box-sizing: border-box; }
+button, a { font: inherit; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+.site { position: relative; min-height: 100vh; overflow: hidden; background: radial-gradient(ellipse at 51% -10%, rgba(92, 187, 148, .12), transparent 36%), var(--bg); }
+.site:before { content: ""; position: absolute; inset: 0 0 auto; height: 1120px; pointer-events: none; opacity: .22; background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent 82%); }
+.ambient { position: absolute; border-radius: 999px; filter: blur(120px); pointer-events: none; opacity: .22; }
+.ambient-one { width: 480px; height: 480px; top: 350px; right: -320px; background: var(--blue); }
+.ambient-two { width: 400px; height: 400px; top: 2100px; left: -320px; background: var(--violet); }
